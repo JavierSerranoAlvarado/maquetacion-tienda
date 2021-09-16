@@ -1,0 +1,153 @@
+/*Formatear documento */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/*Barra de Navegacion*/
+
+nav {
+    position: absolute;
+    z-index: 4;
+    display:flex;
+    background: black;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav img{
+    height: 5rem;
+    margin-right: auto;
+}
+
+/*Primer seccion del documento */
+
+.principal{
+    background-image: url("https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg");
+    background-size: 100% 90vh;
+    background-repeat:no-repeat;
+    height:100vh;
+    position: relative;
+    color:white;
+}
+
+.principal:before {
+	content:'';
+	position: absolute;
+    top: 0;
+    bottom: 9.7rem;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.principal__informacion{
+    position: absolute;
+    width:80%;
+    height:90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    right: 0;
+    left: 0;
+    margin: 14rem auto;
+}
+
+
+.principal__informacion h1{
+    font-size: 7rem;
+}
+
+.principal__informacion p{
+    width:60%;
+}
+
+.principal__informacion p{
+    width:60%;
+    margin: 4rem 0;
+}
+
+.principal__informacion .button{
+    padding: 2rem 4rem;
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.principal__informacion .btn-principal{
+    background: orangered;
+}
+
+.principal__informacion .btn-secundario{
+    border: 1px solid white;
+}
+
+.principal__servicios{
+    position: absolute;
+    display:flex;
+    width: 80%;
+    bottom:5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content:space-around;
+}
+
+.principal__servicios--caja{
+    width:25rem;
+    height:25rem;    
+    background: orangered;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.principal__servicios--caja img{
+    width:10rem;
+    height:10rem;  
+    margin-bottom: 2rem;  
+}
+
+/*Segunda seccion del documento */
+
+.platilloPrincipal{
+    display:flex;
+}
+.platilloPrincipal section{
+    padding:5rem;
+}
+
+.platilloPrincipal h3{
+    font-size:6rem;
+}
+
+.platilloPrincipal p{
+    margin-top:3rem;
+    font-size:2.5rem;
+    font-weight:bold;
+}
