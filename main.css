@@ -1,4 +1,10 @@
-/*Formatear documento */
+:root{
+    --color-principal: #EB5A2C;
+}
+
+/* ==========================================================
+Formatear documento 
+==============================================================*/
 *{
     padding:0;
     margin:0;
@@ -13,7 +19,9 @@ body{
     font-size: 1.6rem;
 }
 
-/*Barra de Navegacion*/
+/* =============================================================
+Barra de Navegacion
+===========================================================*/
 
 nav {
     position: absolute;
@@ -40,7 +48,9 @@ nav img{
     margin-right: auto;
 }
 
-/*Primer seccion del documento */
+/* ===============================================================
+Primer seccion del documento 
+====================================================================*/
 
 .principal{
     background-image: url("https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg");
@@ -49,6 +59,7 @@ nav img{
     height:100vh;
     position: relative;
     color:white;
+    padding:14rem;
 }
 
 .principal:before {
@@ -63,23 +74,11 @@ nav img{
 
 .principal__informacion{
     position: absolute;
-    width:80%;
-    height:90vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    right: 0;
-    left: 0;
-    margin: 14rem auto;
 }
 
 
 .principal__informacion h1{
     font-size: 7rem;
-}
-
-.principal__informacion p{
-    width:60%;
 }
 
 .principal__informacion p{
@@ -98,7 +97,7 @@ nav img{
 }
 
 .principal__informacion .btn-principal{
-    background: orangered;
+    background: var(--color-principal);
 }
 
 .principal__informacion .btn-secundario{
@@ -119,7 +118,7 @@ nav img{
 .principal__servicios--caja{
     width:25rem;
     height:25rem;    
-    background: orangered;
+    background: var(--color-principal);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -133,21 +132,124 @@ nav img{
     margin-bottom: 2rem;  
 }
 
-/*Segunda seccion del documento */
+/* ==============================================================
+Segunda seccion del documento 
+===================================================================*/
 
 .platilloPrincipal{
     display:flex;
-}
-.platilloPrincipal section{
-    padding:5rem;
+    width: 80%;
+    flex-flow: row wrap;
+    margin: 0 auto;
 }
 
-.platilloPrincipal h3{
+.platilloPrincipal--descripcion {
+    flex: 1 1 50%;
+}
+
+.platilloPrincipal--descripcion h3{
     font-size:6rem;
 }
 
-.platilloPrincipal p{
+.platilloPrincipal--descripcion p{
     margin-top:3rem;
     font-size:2.5rem;
     font-weight:bold;
 }
+
+.platilloPrincipal--img {
+    flex: 1 1 50%;
+    display:flex;
+}
+.platilloPrincipal--img img{
+    flex: 1 1;
+    width: 1rem;
+    object-fit: cover;
+}
+
+.platilloPrincipal--parrafo{
+    flex: 0 1 80%;
+    border: 1rem solid var(--color-principal);
+    margin: 4rem auto;
+    font-weight: bold;
+    padding:2rem;
+}
+
+/* ==============================================================
+ Tercera seccion del documento CARRUSEL de IMAGENES
+ ==============================================================*/
+
+.carrusel-img{
+    display: flex;
+    flex-flow: column wrap;
+    height:80rem;
+    width:80%;
+    margin: 0 auto;
+}
+
+.img{
+    object-fit: cover;
+    width: 10rem;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.carrusel-flex{
+    display: flex;
+    border: 1rem solid white;
+}
+
+.carrusel-img--1{
+    flex: 1 1 20%;
+}
+.carrusel-img--2{
+    flex: 1 1 60%;
+}
+.carrusel-img--3{
+    flex: 1 1 100%;
+}
+.carrusel-img--4{
+    flex: 1 1 30%;
+}
+.carrusel-img--5{
+    flex: 1 1 30%;
+}
+.carrusel-img--6{
+    flex: 1 1 30%;
+}
+
+/* =================================================================
+Cuarta seccion del documento FORMULARIO 
+===========================================================*/
+
+.formulario{
+    width: 80%;
+    margin: 0 auto;
+    height: 80rem;
+    background: linear-gradient(to right, var(--color-principal), white);
+    display:flex;
+    flex-flow: column wrap;
+}
+
+.formulario--info{
+    font-size: 6rem;
+    flex: 1 1 100%;
+    max-width: 50%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+}
+
+.formulario--form{
+    flex: 1 1 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+ .formulario--form form{
+    width: 30%;
+    height: 30rem;
+    border: 1px solid black;
+} 
