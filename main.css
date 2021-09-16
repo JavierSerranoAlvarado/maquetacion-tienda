@@ -1,5 +1,8 @@
 :root{
     --color-principal: #EB5A2C;
+    --titulos-importantes: 7rem;
+    --titulo-secundario: 6rem;
+    --texto-parrafo: 2.5rem;
 }
 
 /* ==========================================================
@@ -9,6 +12,7 @@ Formatear documento
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -72,13 +76,14 @@ Primer seccion del documento
 	background-color: rgba(0,0,0,0.6);
 }
 
+
 .principal__informacion{
     position: absolute;
 }
 
 
 .principal__informacion h1{
-    font-size: 7rem;
+    font-size: var(--titulos-importantes);
 }
 
 .principal__informacion p{
@@ -148,12 +153,12 @@ Segunda seccion del documento
 }
 
 .platilloPrincipal--descripcion h3{
-    font-size:6rem;
+    font-size:var(--titulo-secundario);
 }
 
 .platilloPrincipal--descripcion p{
     margin-top:3rem;
-    font-size:2.5rem;
+    font-size:var(--texto-parrafo);
     font-weight:bold;
 }
 
@@ -173,6 +178,7 @@ Segunda seccion del documento
     margin: 4rem auto;
     font-weight: bold;
     padding:2rem;
+    font-size: var(--texto-parrafo);
 }
 
 /* ==============================================================
@@ -225,31 +231,140 @@ Cuarta seccion del documento FORMULARIO
 .formulario{
     width: 80%;
     margin: 0 auto;
-    height: 80rem;
+    height: 82rem;
     background: linear-gradient(to right, var(--color-principal), white);
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
 }
 
 .formulario--info{
-    font-size: 6rem;
-    flex: 1 1 100%;
+    flex: 1 1 50%;
     max-width: 50%;
-    text-align: center;
     display:flex;
     align-items: center;
+    color: white;
+}
+.formulario--info h2{
+    width: 70%;
+    margin: 0 auto;
+    font-size: var(--titulos-importantes);
 }
 
 .formulario--form{
-    flex: 1 1 100%;
+    flex: 1 1 50%;
     display:flex;
-    justify-content:center;
-    align-items: center;
+    align-items:center;
 
 }
 
- .formulario--form form{
-    width: 30%;
-    height: 30rem;
-    border: 1px solid black;
+ .form-container{
+    width: 90%;
+    height: 80%;
+    background: rgba(229, 229, 229, 0.5);
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
 } 
+
+.form-container form{
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+
+.formulario--form form label{
+    flex: 1 1 100%;
+    text-align: center;
+    padding:1rem;
+}
+
+.formulario--form form label input{
+    padding: 1rem;
+    height: 6rem;
+    border-radius: 2rem;
+    width: 80%;
+    border: none;
+}
+
+.formulario--form #uno{
+    background: var(--color-principal);
+}
+
+.formulario--form p{
+    flex: 1 1 100%;
+    text-align:center;
+    align-self: center;
+    color: gray;
+}
+
+.formulario--form .botones{
+    align-self: start;
+    width: 80%;
+    display:flex;
+    justify-content:space-around;
+    margin: 0 auto;
+}
+.formulario--form .botones button{
+    padding: 1rem 7rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-principal);
+    border: none;
+}
+
+/*================================================
+Quinta seccion del elemento RESEÑAS
+================================================*/
+
+.reseñas{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.reseñas-container{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.reseñas--img{
+    flex: 1 1 50%;
+    display:flex;
+
+}
+
+.reseñas--img img{
+    flex: 1 1;
+    width: 1rem;
+    height: 100%;
+    padding: 4rem;
+    object-fit: cover;
+
+}
+
+.reseñas--info{
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+
+}
+
+.reseñas--info h3{
+    font-size: var(--titulo-secundario);
+}
+.reseñas--info p{
+    font-size: var(--texto-parrafo);
+    font-weight: bold;
+}
+
+.reseñas--medidor{
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.medidor__icono{
+    width:4rem;
+    margin: 0 1rem;
+}

@@ -2,12 +2,19 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./main.css" type="text/css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
+
     <head>
       <nav>
         <img src="assets/comida-china.png" alt="icon-site" />
@@ -36,6 +43,7 @@
           <button class="button btn-secundario">Lorem Ipsum</button>
         </div>
       </section>
+
       <section class="principal__servicios">
         <div class="principal__servicios--caja">
           <img src="./assets/comida.png" alt="" />
@@ -50,6 +58,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </section>
+
     </article>
 
     <article class="platilloPrincipal">
@@ -121,20 +130,54 @@
         />
       </figure>
     </article>
-    <article class="formulario" >
-        <section class="formulario--info">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-        </section>
-        <section class="formulario--form">
-            <form method="post" >
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <button></button>
-                <button></button>
-            </form>
-        </section>
 
+    <article class="formulario">
+      <section class="formulario--info">
+        <h2>Lorem ipsum dolor sit</h2>
+      </section>
+      <section class="formulario--form">
+        <div class="form-container">
+          <form method="post">
+            <label for="uno">
+              <input type="text" id="uno" name="uno"  />
+            </label>
+            <label for="dos">
+              <input type="text" id="dos" name="dos" />
+            </label>
+            <label for="tres">
+              <input type="text" id="tres" name="tres" />
+            </label>
+            <p>Ut enim ad minim veniam</p>
+            <div class="botones">
+              <button>.</button>
+              <button>.</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </article>
+    <article class="reseñas">
+        <section class="reseñas-container">
+            <figure class="reseñas--img">
+                <img src="https://columnadigital.com/wp-content/uploads/2021/07/ramen.jpg" alt="">
+            </figure>
+            <div class="reseñas--info">
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic voluptates sequi nulla odit tenetur maxime dicta quasi soluta.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic voluptates sequi nulla odit tenetur maxime dicta quasi soluta.
+                </p>
+            </div>
+            <figure class="reseñas--medidor">
+                <img class="medidor__icono" src="./assets/estrellaLlena.png" alt="">
+                <img class="medidor__icono" src="./assets/estrellaLlena.png" alt="">
+                <img class="medidor__icono" src="./assets/estrellaLlena.png" alt="">
+                <img class="medidor__icono" src="./assets/estrellaLlena.png" alt="">
+                <img class="medidor__icono" src="./assets/estrellaVacia.png" alt="">
+            </figure>
+        </section>
+    </article>
+    <footer>
+
+    </footer>
   </body>
 </html>
