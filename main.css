@@ -1,26 +1,26 @@
-:root{
-    --color-principal: #EB5A2C;
-    --titulos-importantes: 7rem;
-    --titulo-secundario: 6rem;
-    --texto-parrafo: 2.5rem;
+:root {
+  --color-principal: #eb5a2c;
+  --titulos-importantes: 7rem;
+  --titulo-secundario: 6rem;
+  --texto-parrafo: 2.5rem;
 }
 
 /* ==========================================================
 Formatear documento 
 ==============================================================*/
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
 }
 
 /* =============================================================
@@ -28,343 +28,369 @@ Barra de Navegacion
 ===========================================================*/
 
 nav {
-    position: absolute;
-    z-index: 4;
-    display:flex;
-    background: black;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  background: black;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
 }
-nav ul li{
-    display: inline;
+nav ul li {
+  display: inline;
 }
-nav ul li a{
-    color: white;
-    margin-right: 1rem;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav img{
-    height: 5rem;
-    margin-right: auto;
+nav img {
+  height: 5rem;
+  margin-right: auto;
 }
 
 /* ===============================================================
 Primer seccion del documento 
 ====================================================================*/
 
-.principal{
-    background-image: url("https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg");
-    background-size: 100% 90vh;
-    background-repeat:no-repeat;
-    height:100vh;
-    position: relative;
-    color:white;
-    padding:14rem;
+.principal {
+  background-image: url("https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg");
+  background-size: 100% 90vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  color: white;
+  padding: 14rem;
 }
 
 .principal:before {
-	content:'';
-	position: absolute;
-    top: 0;
-    bottom: 9.7rem;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 9.7rem;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-
-.principal__informacion{
-    position: absolute;
+.principal__informacion {
+  position: absolute;
 }
 
-
-.principal__informacion h1{
-    font-size: var(--titulos-importantes);
+.principal__informacion h1 {
+  font-size: var(--titulos-importantes);
 }
 
-.principal__informacion p{
-    width:60%;
-    margin: 4rem 0;
+.principal__informacion p {
+  width: 60%;
+  margin: 4rem 0;
 }
 
-.principal__informacion .button{
-    padding: 2rem 4rem;
-    background: none;
-    border: none;
-    color: white;
-    margin-right: 4rem;
-    font-weight: bold;
-    cursor: pointer;
+.principal__informacion .button {
+  padding: 2rem 4rem;
+  background: none;
+  border: none;
+  color: white;
+  margin-right: 4rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.principal__informacion .btn-principal{
-    background: var(--color-principal);
+.principal__informacion .btn-principal {
+  background: var(--color-principal);
 }
 
-.principal__informacion .btn-secundario{
-    border: 1px solid white;
+.principal__informacion .btn-secundario {
+  border: 1px solid white;
 }
 
-.principal__servicios{
-    position: absolute;
-    display:flex;
-    width: 80%;
-    bottom:5rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-content:space-around;
+.principal__servicios {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 
-.principal__servicios--caja{
-    width:25rem;
-    height:25rem;    
-    background: var(--color-principal);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.principal__servicios--caja {
+  width: 25rem;
+  height: 25rem;
+  background: var(--color-principal);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.principal__servicios--caja img{
-    width:10rem;
-    height:10rem;  
-    margin-bottom: 2rem;  
+.principal__servicios--caja img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
 }
 
 /* ==============================================================
 Segunda seccion del documento 
 ===================================================================*/
 
-.platilloPrincipal{
-    display:flex;
-    width: 80%;
-    flex-flow: row wrap;
-    margin: 0 auto;
+.platilloPrincipal {
+  display: flex;
+  width: 80%;
+  flex-flow: row wrap;
+  margin: 0 auto;
 }
 
 .platilloPrincipal--descripcion {
-    flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
-.platilloPrincipal--descripcion h3{
-    font-size:var(--titulo-secundario);
+.platilloPrincipal--descripcion h3 {
+  font-size: var(--titulo-secundario);
 }
 
-.platilloPrincipal--descripcion p{
-    margin-top:3rem;
-    font-size:var(--texto-parrafo);
-    font-weight:bold;
+.platilloPrincipal--descripcion p {
+  margin-top: 3rem;
+  font-size: var(--texto-parrafo);
+  font-weight: bold;
 }
 
 .platilloPrincipal--img {
-    flex: 1 1 50%;
-    display:flex;
+  flex: 1 1 50%;
+  display: flex;
 }
-.platilloPrincipal--img img{
-    flex: 1 1;
-    width: 1rem;
-    object-fit: cover;
+.platilloPrincipal--img img {
+  flex: 1 1;
+  width: 1rem;
+  object-fit: cover;
 }
 
-.platilloPrincipal--parrafo{
-    flex: 0 1 80%;
-    border: 1rem solid var(--color-principal);
-    margin: 4rem auto;
-    font-weight: bold;
-    padding:2rem;
-    font-size: var(--texto-parrafo);
+.platilloPrincipal--parrafo {
+  flex: 0 1 80%;
+  border: 1rem solid var(--color-principal);
+  margin: 4rem auto;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: var(--texto-parrafo);
 }
 
 /* ==============================================================
  Tercera seccion del documento CARRUSEL de IMAGENES
  ==============================================================*/
 
-.carrusel-img{
-    display: flex;
-    flex-flow: column wrap;
-    height:80rem;
-    width:80%;
-    margin: 0 auto;
+.carrusel-img {
+  display: flex;
+  flex-flow: column wrap;
+  height: 80rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.img{
-    object-fit: cover;
-    width: 10rem;
-    height: 100%;
-    flex-grow: 1;
+.img {
+  object-fit: cover;
+  width: 10rem;
+  height: 100%;
+  flex-grow: 1;
 }
 
-.carrusel-flex{
-    display: flex;
-    border: 1rem solid white;
+.carrusel-flex {
+  display: flex;
+  border: 1rem solid white;
 }
 
-.carrusel-img--1{
-    flex: 1 1 20%;
+.carrusel-img--1 {
+  flex: 1 1 20%;
 }
-.carrusel-img--2{
-    flex: 1 1 60%;
+.carrusel-img--2 {
+  flex: 1 1 60%;
 }
-.carrusel-img--3{
-    flex: 1 1 100%;
+.carrusel-img--3 {
+  flex: 1 1 100%;
 }
-.carrusel-img--4{
-    flex: 1 1 30%;
+.carrusel-img--4 {
+  flex: 1 1 30%;
 }
-.carrusel-img--5{
-    flex: 1 1 30%;
+.carrusel-img--5 {
+  flex: 1 1 30%;
 }
-.carrusel-img--6{
-    flex: 1 1 30%;
+.carrusel-img--6 {
+  flex: 1 1 30%;
 }
 
 /* =================================================================
 Cuarta seccion del documento FORMULARIO 
 ===========================================================*/
 
-.formulario{
-    width: 80%;
-    margin: 0 auto;
-    height: 82rem;
-    background: linear-gradient(to right, var(--color-principal), white);
-    display:flex;
-    flex-flow: row wrap;
+.formulario {
+  width: 80%;
+  margin: 0 auto;
+  height: 82rem;
+  background: linear-gradient(to right, var(--color-principal), white);
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.formulario--info{
-    flex: 1 1 50%;
-    max-width: 50%;
-    display:flex;
-    align-items: center;
-    color: white;
+.formulario--info {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
 }
-.formulario--info h2{
-    width: 70%;
-    margin: 0 auto;
-    font-size: var(--titulos-importantes);
-}
-
-.formulario--form{
-    flex: 1 1 50%;
-    display:flex;
-    align-items:center;
-
+.formulario--info h2 {
+  width: 70%;
+  margin: 0 auto;
+  font-size: var(--titulos-importantes);
 }
 
- .form-container{
-    width: 90%;
-    height: 80%;
-    background: rgba(229, 229, 229, 0.5);
-    display:flex;
-    flex-flow: column nowrap;
-    align-items: center;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-} 
-
-.form-container form{
-    height: 80%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
+.formulario--form {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
 }
 
-.formulario--form form label{
-    flex: 1 1 100%;
-    text-align: center;
-    padding:1rem;
+.form-container {
+  width: 90%;
+  height: 80%;
+  background: rgba(229, 229, 229, 0.5);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
-.formulario--form form label input{
-    padding: 1rem;
-    height: 6rem;
-    border-radius: 2rem;
-    width: 80%;
-    border: none;
+.form-container form {
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
 }
 
-.formulario--form #uno{
-    background: var(--color-principal);
+.formulario--form form label {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 1rem;
 }
 
-.formulario--form p{
-    flex: 1 1 100%;
-    text-align:center;
-    align-self: center;
-    color: gray;
+.formulario--form form label input {
+  padding: 1rem;
+  height: 6rem;
+  border-radius: 2rem;
+  width: 80%;
+  border: none;
 }
 
-.formulario--form .botones{
-    align-self: start;
-    width: 80%;
-    display:flex;
-    justify-content:space-around;
-    margin: 0 auto;
+.formulario--form #uno {
+  background: var(--color-principal);
 }
-.formulario--form .botones button{
-    padding: 1rem 7rem;
-    border-radius: 1.5rem;
-    background-color: var(--color-principal);
-    border: none;
+
+.formulario--form p {
+  flex: 1 1 100%;
+  text-align: center;
+  align-self: center;
+  color: gray;
+}
+
+.formulario--form .botones {
+  align-self: start;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.formulario--form .botones button {
+  padding: 1rem 7rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-principal);
+  border: none;
 }
 
 /*================================================
 Quinta seccion del elemento RESEÑAS
 ================================================*/
 
-.reseñas{
-    width: 80%;
-    margin: 5rem auto;
+.reseñas {
+  width: 80%;
+  margin: 5rem auto;
 }
 
-.reseñas-container{
-    display:flex;
-    flex-flow: row wrap;
+.reseñas-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.reseñas--img{
-    flex: 1 1 50%;
-    display:flex;
-
+.reseñas--img {
+  flex: 1 1 50%;
+  display: flex;
 }
 
-.reseñas--img img{
-    flex: 1 1;
-    width: 1rem;
-    height: 100%;
-    padding: 4rem;
-    object-fit: cover;
-
+.reseñas--img img {
+  flex: 1 1;
+  width: 1rem;
+  height: 100%;
+  padding: 4rem;
+  object-fit: cover;
 }
 
-.reseñas--info{
-    flex: 1 1 50%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content:space-around;
-
+.reseñas--info {
+  flex: 1 1 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
 
-.reseñas--info h3{
-    font-size: var(--titulo-secundario);
+.reseñas--info h3 {
+  font-size: var(--titulo-secundario);
 }
-.reseñas--info p{
-    font-size: var(--texto-parrafo);
-    font-weight: bold;
-}
-
-.reseñas--medidor{
-    flex: 1 1 100%;
-    text-align: center;
+.reseñas--info p {
+  font-size: var(--texto-parrafo);
+  font-weight: bold;
 }
 
-.medidor__icono{
-    width:4rem;
-    margin: 0 1rem;
+.reseñas--medidor {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.medidor__icono {
+  width: 4rem;
+  margin: 0 1rem;
+}
+
+/* =================================================================
+Sexta seccion del documento FOOTER 
+====================================================*/
+footer {
+  background: black;
+  width: 100%;
+}
+
+.footer-container {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer--info {
+  max-width: 40%;
+}
+.footer--info h2{
+    font-size: 4rem;
+  }
+
+.footer-logo {
+  max-width: 30%;
+}
+
+.footer-logo img {
+  width: 20rem;
 }
