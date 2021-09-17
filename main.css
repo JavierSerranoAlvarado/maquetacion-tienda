@@ -57,27 +57,20 @@ Primer seccion del documento
 ====================================================================*/
 
 .principal {
-  background-image: url("https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg");
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://s1.eestatic.com/2016/11/15/cocinillas/cocinillas_170994703_116270236_1706x960.jpg");
   background-size: 100% 90vh;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   color: white;
-  padding: 14rem;
-}
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
 
-.principal:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 9.7rem;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
 }
-
 .principal__informacion {
-  position: absolute;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .principal__informacion h1 {
@@ -108,12 +101,8 @@ Primer seccion del documento
 }
 
 .principal__servicios {
-  position: absolute;
   display: flex;
   width: 80%;
-  bottom: 5rem;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   justify-content: space-around;
 }
@@ -143,11 +132,15 @@ Segunda seccion del documento
   display: flex;
   width: 80%;
   flex-flow: row wrap;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
 .platilloPrincipal--descripcion {
   flex: 1 1 50%;
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+
 }
 
 .platilloPrincipal--descripcion h3 {
@@ -376,6 +369,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -394,3 +388,56 @@ footer {
 .footer-logo img {
   width: 20rem;
 }
+
+@media(max-width:1024px){
+    .principal__informacion h1 {
+        font-size: 5rem;
+    }
+
+    .principal__servicios--caja {
+        width: 20rem;
+        height: 20rem;
+    }
+    .principal__servicios--caja img {
+        width: 9rem;
+        height: 9rem;
+    }
+} 
+
+@media (max-width:768px){
+    .principal__servicios--caja {
+        width: 15rem;
+        height: 15rem;
+    }
+    .principal__servicios--caja img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .formulario--form .botones button {
+        padding: 1rem 5rem;
+    }
+
+} /*ajustables*/
+
+@media(max-width:480px){
+    nav {
+        position: relative;
+    }
+    nav ul li {
+        display: block;
+    }
+    .principal__informacion h1 {
+        font-size: 3rem;
+    }
+    .carrusel-img {
+        flex-flow: row wrap;
+    }
+    .footer-container{
+        flex-flow: column wrap;
+    }
+    .footer-logo{
+        max-width: 100%;
+    }
+} /*Mobil */
+
